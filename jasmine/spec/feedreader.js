@@ -91,7 +91,7 @@ $(function() {
 
 		it('completes work', function() {
 			const feed = document.querySelector('.feed');
-			expect(feed.children.length > 0).toBe(true);
+			expect(feed.entry.length > 0).toBe(true);
 		});
 
 	});
@@ -101,9 +101,10 @@ $(function() {
 		const firstFeed = [];
 
 		beforeEach(function(done) {
-			loadFeed(0);
-			Array.from(feed.children).forEach(function(entry) {
-				firstFeed.push(entry.innerText);
+			loadFeed(0, function() {
+				Array.from(feed.children).forEach(function(entry) {
+					firstFeed.push(entry.innerText);
+				});
 			});
 			loadFeed(1, done);
 		});

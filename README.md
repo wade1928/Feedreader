@@ -5,7 +5,7 @@ Feedreader.js is designed to provide a test driven development approach to creat
 
 # IMPLEMENTATION
 
-The repository is located at https://github.com/wade1928/Feedreader.  From here you may either download Feedreader as a zip file, or clone the repository to your local machine.  Just click the drop down menu "Clone or download" to make your choice.  Once the project is on your local machine, you can either use Feedreader as a reference for creating your own testing suite, or you can modify feedreader.js and/or the documents in your app to work together.
+The repository is located at https://github.com/wade1928/Feedreader.  From here you may either download Feedreader as a zip file, or clone the repository to your local machine.  Just click the drop down menu "Clone or download" to make your choice.  Once the project is on your local machine, open index.html to run Feedreader. You can either use Feedreader as a reference for creating your own testing suite, or you can modify feedreader.js and/or the documents in your app to work together.
 
 
 # FUNCTIONALITY

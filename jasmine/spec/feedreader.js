@@ -93,18 +93,22 @@ $(function() {
 	});
 	/* this is the fourth test suite*/
 	describe('New Feed Selection', function() {
+			const feed = document.querySelector('.feed');
+			let firstFeed;
+			let secondFeed;
+			beforeEach(function(done) {
+				loadFeed(0, function() {
+					firstFeed = feed.innerText;
+					loadFeed(1, function() {
+						secondFeed = feed.innerText;
+						done();
+					});
+				});
+			});
 
-			loadFeed(0, function() {
-
-				loadFeed(1, function() {
-
-					done();
-
-				})
-			})
 			debugger;
 			it('content changes', function() {
-				expect(allFeeds[0].url === allFeeds[1].url).toBe(false);
+				expect(firstFeed).not.toEqual(secondFeed);
 			});
 		}
 
